@@ -1,0 +1,3 @@
+树形结构的数据库表Schema设计
+
+http://www.cnblogs.com/liulaocai2/p/4363364.html
