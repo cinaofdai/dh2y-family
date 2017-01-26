@@ -1,5 +1,5 @@
-# dh2y-framework
-dh2y一个个人使用的轻量级php框架
+# dh2y-family
+dh2y-family是使用dh2y一个的轻量级php框架开发的家族、族谱关系管理系统
 
 ##一、开发基础说明
 * 框架集成了TP习惯和YII2的部分书写习惯。
@@ -16,9 +16,9 @@ dh2y一个个人使用的轻量级php框架
 
 ##二、使用
 ```php
-git clone https://github.com/cinaofdai/dh2y-framework.git
+git clone https://github.com/cinaofdai/dh2y-family.git
 
-cd dh2y-framework
+cd dh2y-family
 
 composer install
 ```
@@ -54,7 +54,7 @@ vendor
 ```
 
 ##三、提交问题bug
-bug反馈：https://github.com/cinaofdai/dh2y-framework/issues/new
+bug反馈：https://github.com/cinaofdai/dh2y-family/issues/new
 
 
 
