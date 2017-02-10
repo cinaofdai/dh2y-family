@@ -9,5 +9,9 @@ return array(
         'MAIN__CSS'      =>  '/asset/main/css',
         'MAIN__JS'       =>  '/asset/main/js',
         'MAIN__PLUGINS'  =>  '/asset/main/plugins',
+
+        'FAMILY__IMAGE'    =>  '/asset/family/images',
+        'FAMILY__CSS'      =>  '/asset/family/css',
+        'FAMILY__ROOT'     =>  '/asset/family',
     )
 );
