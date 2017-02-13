@@ -10,10 +10,12 @@ class dh2y {
     public static $controller;      //控制器
     public static $action;          //方法
     public static $module;           //模块
+
     /**
      * 框架启动入口
      */
     static public function run(){
+
         //访问日志初始化
         \core\lib\log::init();
 
@@ -43,6 +45,22 @@ class dh2y {
         }else{
             throw new \Exception('找不到控制器'.$controller);
         }
+    }
+
+    /**
+     * post请求判断
+     * @return bool
+     */
+    static public function IS_POST(){
+       return  $_SERVER['REQUEST_METHOD'] =='POST' ? true : false;
+    }
+
+    /**
+     * get请求判断
+     * @return bool
+     */
+    static public function IS_GET(){
+      return  $_SERVER['REQUEST_METHOD'] =='GET' ? true : false;
     }
 
     /**

@@ -101,3 +101,11 @@
     display: inline-block;
     font-size: 35px;
 }
+
+.site-banner {
+    background-color: #393d49;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}

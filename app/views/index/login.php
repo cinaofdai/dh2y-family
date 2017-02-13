@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <title>DH2Y家族管理系统 - 登录</title>
-    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+    <meta name="keywords" content="DH2Y家族管理系统">
+    <meta name="description" content="DH2Y家族管理系统，不怕家族庞大而记不住家族的成员">
     <link href="{{STATUS.MAIN__CSS}}/bootstrap.min.css"  rel="stylesheet">
     <link href="{{STATUS.MAIN__CSS}}/font-awesome.min.css-v=4.4.0.css" rel="stylesheet">
     <link href="{{STATUS.MAIN__CSS}}/animate.min.css" rel="stylesheet">
@@ -43,11 +43,11 @@
             </div>
         </div>
         <div class="col-sm-5">
-            <form method="post" action="http://www.zi-han.net/theme/hplus/index.html">
+            <form method="post" action="/index/login">
                 <h4 class="no-margins">族长登录：</h4>
                 <p class="m-t-md">登录到DH2Y家族管理后台</p>
-                <input type="text" class="form-control uname" placeholder="用户名" />
-                <input type="password" class="form-control pword m-b" placeholder="密码" />
+                <input type="text" name="user[name]" class="form-control uname" placeholder="用户名" />
+                <input type="password" name="user[password]" class="form-control pword m-b" placeholder="密码" />
                 <a href="">忘记密码了？</a>
                 <button class="btn btn-success btn-block">登录</button>
             </form>
