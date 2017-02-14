@@ -7,7 +7,7 @@ return array(
 
     // 必须配置项
     'database_type' => 'mysql',
-    'database_name' => 'dh2y',
+    'database_name' => 'dh2y_family',
     'server' => 'localhost',
     'username' => 'root',
     'password' => 'root',

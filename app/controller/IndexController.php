@@ -3,10 +3,11 @@
 namespace app\controller;
 
 use app\model\AdminModel;
+use app\model\ShaikhModel;
 use core\lib\controller;
-use core\util\Cookies;
+use core\util\dh2y\Session;
 use core\util\dh2y\Url;
-use core\util\Session;
+
 
 
 
@@ -28,7 +29,17 @@ class IndexController extends controller
     public function login(){
         if(\core\dh2y::IS_POST()){
             $user = post('user');
-            dump($user);die;
+
+            $model = new ShaikhModel();
+            $shaikh=$model->findShaikh($user['name']);
+            if($shaikh&&md5($user['password'])==$shaikh['password']){
+                Session::start();
+                Session::set('admin',$shaikh);
+                redirect(Url::toRoute(['index/love']));
+            }else{
+                $this->assign('error','用户名或密码错误');
+            }
+
         }
         $this->display();
     }

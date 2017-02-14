@@ -45,7 +45,13 @@
         <div class="col-sm-5">
             <form method="post" action="/index/login">
                 <h4 class="no-margins">族长登录：</h4>
-                <p class="m-t-md">登录到DH2Y家族管理后台</p>
+                <p class="m-t-md">
+                    {% if error %}
+                        <span style="color: red">{{error}}</span>
+                    {% else %}
+                        登录到DH2Y家族管理后台
+                    {% endif %}
+                </p>
                 <input type="text" name="user[name]" class="form-control uname" placeholder="用户名" />
                 <input type="password" name="user[password]" class="form-control pword m-b" placeholder="密码" />
                 <a href="">忘记密码了？</a>
